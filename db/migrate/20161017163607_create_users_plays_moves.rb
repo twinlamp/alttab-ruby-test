@@ -1,4 +1,4 @@
-class CreateUsersPlaysTiles < ActiveRecord::Migration[5.0]
+class CreateUsersPlaysMoves < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
       t.timestamps
@@ -9,7 +9,7 @@ class CreateUsersPlaysTiles < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    create_table :tiles do |t|
+    create_table :moves do |t|
       t.integer :play_id, null: false
       t.integer :x, null: false
       t.integer :y, null: false

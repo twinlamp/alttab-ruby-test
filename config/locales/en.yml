@@ -21,3 +21,16 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        play:
+          attributes:
+            base:
+              unbroken_line: 'tiles must form unbroken column or row'
+              touches_existing_tile: 'tiles must touch at least one previously played Tile or include the center square at (0,0)'
+              same_tiles: 'tiles must have different coordinates'
+        tile:
+          attributes:
+            base:
+              tile_exists: 'already exists in this game'
